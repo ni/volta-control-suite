@@ -160,7 +160,7 @@
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1118306832</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
 	</Item>
 	<Item Name="Battery_Destroy.vi" Type="VI" URL="../Battery_Destroy.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%T!!!!#1!I1(!!(A!!%1^#982U:8*Z,GRW9WRB=X-!$(*F:G6S:7ZD:3"J&lt;A!!"!!!!!R!)1:T&gt;'&amp;U&gt;8-!!!N!!Q!%9W^E:1!!%%!Q`````Q:T&lt;X6S9W5!!":!5!!$!!)!!Q!%#%6S=G^S)%FO!!!I1(!!(A!!%1^#982U:8*Z,GRW9WRB=X-!$8*F:G6S:7ZD:3"P&gt;81!&amp;E"1!!-!!A!$!!1*28*S&lt;X)A4X6U!)1!]!!5!!!!!1!"!!%!!1!&amp;!!%!!1!"!!%!!1!"!!%!!1!'!!%!!1!"!!%!"Q-!!2!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!D1!!!!!!!!!!!!!!!!!!!!!!!!!."1!!!!%!#!!!!!!</Property>

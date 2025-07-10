@@ -303,7 +303,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/PPL Version Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{85A497F4-F085-4058-8BF6-977EFFBDF419}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">HPS-17000-PowerModule.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/HPS-17000-PowerModule.lvlibp</Property>
