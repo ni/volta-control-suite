@@ -274,7 +274,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/SubVIs/PPL Version Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{3D7B62BB-DE2B-44B1-8337-1EBAD43E5DDA}</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">13</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Simulated-PowerModule.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Power Modules/Simulated-PowerModule.lvlibp</Property>
@@ -284,7 +284,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/Power Modules</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{049D00F8-05FE-4691-8815-67A6D723FC82}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7E5EE163-8851-408E-9BF5-605792AE6D12}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Simulated-PowerModule.lvlib</Property>
