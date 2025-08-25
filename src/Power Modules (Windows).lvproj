@@ -129,12 +129,14 @@
 				<Item Name="Network Sync Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Network Sync Data.lvclass"/>
 				<Item Name="Network Sync Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Network Sync Monitor.lvclass"/>
 				<Item Name="Network Sync.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Network Sync.lvclass"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_BC_client.lvlib" Type="Library" URL="/&lt;vilib&gt;/HPS-17000/NI_BC_client.lvlib"/>
 				<Item Name="NI_Bytestream.lvlib" Type="Library" URL="/&lt;vilib&gt;/Array/Bytestream/NI_Bytestream.lvlib"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_Deadline.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Deadline/NI_Deadline.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
+				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_SSH.lvlib" Type="Library" URL="/&lt;vilib&gt;/net/SSH/NI_SSH.lvlib"/>
 				<Item Name="NI_Subprocess.lvlib" Type="Library" URL="/&lt;vilib&gt;/Subprocess/NI_Subprocess.lvlib"/>
@@ -193,6 +195,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lviosrg.dll" Type="Document" URL="lviosrg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -222,7 +225,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/SubVIs/PPL Version Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{31A75332-2DEA-4579-8F68-D18A26C55B8E}</Property>
-				<Property Name="Bld_version.build" Type="Int">72</Property>
+				<Property Name="Bld_version.build" Type="Int">73</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">HPS-17000-PowerModule.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Power Modules/HPS-17000-PowerModule.lvlibp</Property>
@@ -274,7 +277,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/SubVIs/PPL Version Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{3D7B62BB-DE2B-44B1-8337-1EBAD43E5DDA}</Property>
-				<Property Name="Bld_version.build" Type="Int">13</Property>
+				<Property Name="Bld_version.build" Type="Int">19</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Simulated-PowerModule.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Power Modules/Simulated-PowerModule.lvlibp</Property>
