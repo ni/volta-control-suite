@@ -76,6 +76,7 @@
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Set VI Library File Info.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Set VI Library File Info.vi"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
@@ -85,7 +86,10 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="Power Function.ctl" Type="VI" URL="../Types/Power Function.ctl"/>
-			<Item Name="PowerModuleInterface.lvclass" Type="LVClass" URL="../../builds/PowerModuleInterface/home/lvuser/natinst/bin/PowerModuleInterface.lvlibp/Classes/PowerModule_interface/PowerModuleInterface.lvclass"/>
+			<Item Name="PowerModuleInterface.lvlibp" Type="LVLibp" URL="../../builds/PowerModuleInterface/PowerModuleInterface.lvlibp">
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="../../builds/PowerModuleInterface/PowerModuleInterface.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="PowerModuleInterface.lvclass" Type="LVClass" URL="../../builds/PowerModuleInterface/PowerModuleInterface.lvlibp/Classes/PowerModule_interface/PowerModuleInterface.lvclass"/>
+			</Item>
 			<Item Name="Range.ctl" Type="VI" URL="../Types/Range.ctl"/>
 			<Item Name="Setpoints.ctl" Type="VI" URL="../Types/Setpoints.ctl"/>
 		</Item>
@@ -94,6 +98,7 @@
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{B9791531-212D-4A5C-B931-E54E74B04C46}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Power Module Interface</Property>
+				<Property Name="Bld_excludeDependentDLLs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
@@ -111,7 +116,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B610202B-ED71-48C5-90B2-39F851F0AD89}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{BEC2F656-D33E-4F6A-9727-E17DC3CABFB2}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PowerModuleInterface.lvlib</Property>

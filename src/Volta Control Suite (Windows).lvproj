@@ -290,8 +290,56 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="VCS Installer" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">Volta Control Suite (Windows)</Property>
+			<Item Name="Volta Control Suite" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{0B2BA97A-A8D9-4E40-8FAA-EAA503DE18C5}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{166AC028-78DB-47FC-957A-A2EB1FEBD346}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="App_winsec.description" Type="Str">http://www.NI.com</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{0AD7BCB2-6C26-47DF-BA25-78F64DE26EC9}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Volta Control Suite</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/Volta Control Suite</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{D2F2B6F4-ED90-4C02-9D23-44DF9B8F1CA2}</Property>
+				<Property Name="Bld_version.build" Type="Int">58</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.patch" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">volta-control-suite.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/Volta Control Suite/volta-control-suite.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/Volta Control Suite/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Support Files/volta-icon.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0B1D412C-CF1E-4B5A-9A70-3C5514526852}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main HMI.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/PowerModuleInterface.lvlibp</Property>
+				<Property Name="Source[2].preventRename" Type="Bool">true</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_companyName" Type="Str">NI</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Volta Control Suite</Property>
+				<Property Name="TgtF_internalName" Type="Str">Volta Control Suite</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2025 NI</Property>
+				<Property Name="TgtF_productName" Type="Str">Volta Control Suite</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{DECC64CA-8360-4DC9-A758-6D7CCFA99A64}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">volta-control-suite.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Volta Control Suite Installer" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">Volta Control Suite</Property>
 				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
 				<Property Name="Destination[0].tag" Type="Str">{BA7B2E03-80AB-4144-A53B-6144FCEE0F82}</Property>
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
@@ -334,28 +382,21 @@
 				<Property Name="DistPart[0].SoftDep[9].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
 				<Property Name="DistPart[0].SoftDepCount" Type="Int">11</Property>
 				<Property Name="DistPart[0].upgradeCode" Type="Str">{B5F88810-5FC9-3E79-B786-404C9235ADC9}</Property>
-				<Property Name="DistPart[1].flavorID" Type="Str">_runtime_</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{6DC07E4F-70A9-4A21-97E7-13D9A15986FC}</Property>
-				<Property Name="DistPart[1].productName" Type="Str">NI-Sync API Support 24.8</Property>
-				<Property Name="DistPart[1].upgradeCode" Type="Str">{10A7C798-6D55-4C56-A50F-F6A18528DA8E}</Property>
-				<Property Name="DistPart[2].flavorID" Type="Str">_runtime_</Property>
-				<Property Name="DistPart[2].productID" Type="Str">{4EEF9A91-48C1-475A-9198-B475D1B08174}</Property>
-				<Property Name="DistPart[2].productName" Type="Str">NI-Sync Runtime 24.8</Property>
-				<Property Name="DistPart[2].upgradeCode" Type="Str">{EEAE34A1-2A74-4CBC-B624-8F5AF7714987}</Property>
-				<Property Name="DistPartCount" Type="Int">3</Property>
+				<Property Name="DistPartCount" Type="Int">1</Property>
 				<Property Name="INST_author" Type="Str">NI</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../builds/Volta Control Suite (Windows)/VCS Installer</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/Volta Control Suite/Volta Control Suite Installer</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">VCS Installer</Property>
+				<Property Name="INST_buildSpecName" Type="Str">Volta Control Suite Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{BA7B2E03-80AB-4144-A53B-6144FCEE0F82}</Property>
-				<Property Name="INST_installerName" Type="Str">install.exe</Property>
-				<Property Name="INST_productName" Type="Str">Volta Control Suite (Windows)</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
+				<Property Name="INST_installerName" Type="Str">vcs-install.exe</Property>
+				<Property Name="INST_productName" Type="Str">Volta Control Suite</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.2</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">23368006</Property>
 				<Property Name="MSI_arpCompany" Type="Str">NI</Property>
 				<Property Name="MSI_arpURL" Type="Str">http://www.ni.com/</Property>
+				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
 				<Property Name="MSI_distID" Type="Str">{9519FD12-5B53-4167-9999-2FA56E128A86}</Property>
 				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
@@ -364,50 +405,61 @@
 				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
 				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
 				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{BA7B2E03-80AB-4144-A53B-6144FCEE0F82}</Property>
+				<Property Name="Source[0].name" Type="Str">Volta Control Suite</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Volta Control Suite</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
-			<Item Name="Volta Control Suite EXE" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{0B2BA97A-A8D9-4E40-8FAA-EAA503DE18C5}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{166AC028-78DB-47FC-957A-A2EB1FEBD346}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="App_serverType" Type="Int">0</Property>
-				<Property Name="App_winsec.description" Type="Str">http://www.NI.com</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{0AD7BCB2-6C26-47DF-BA25-78F64DE26EC9}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Volta Control Suite EXE</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{D2F2B6F4-ED90-4C02-9D23-44DF9B8F1CA2}</Property>
-				<Property Name="Bld_version.build" Type="Int">53</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.patch" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Volta-Control-Suite.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Volta-Control-Suite.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Support Files/volta-icon.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{221AC170-B175-488D-8D74-A26DB89FD6C8}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main HMI.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">NI</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Volta Control Suite EXE</Property>
-				<Property Name="TgtF_internalName" Type="Str">Volta Control Suite EXE</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2025 NI</Property>
-				<Property Name="TgtF_productName" Type="Str">Volta Control Suite EXE</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{DECC64CA-8360-4DC9-A758-6D7CCFA99A64}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Volta-Control-Suite.exe</Property>
-				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			<Item Name="Volta Control Suite Package" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
+				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
+				<Property Name="NIPKG_allDependenciesToFeed" Type="Bool">false</Property>
+				<Property Name="NIPKG_allDependenciesToSystemLink" Type="Bool">false</Property>
+				<Property Name="NIPKG_certificates" Type="Bool">true</Property>
+				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
+				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/Volta Control Suite Package/Feed</Property>
+				<Property Name="NIPKG_feedLocation.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="NIPKG_installerArtifacts" Type="Str"></Property>
+				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
+				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/Volta Control Suite Package/Package Installer</Property>
+				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str"></Property>
+				<Property Name="NIPKG_license" Type="Ref">/My Computer/Support Files/LICENSE.rtf</Property>
+				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
+				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
+				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
+				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
+				<Property Name="PKG_actions.Count" Type="Int">0</Property>
+				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
+				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
+				<Property Name="PKG_buildNumber" Type="Int">0</Property>
+				<Property Name="PKG_buildSpecName" Type="Str">Volta Control Suite Package</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
+				<Property Name="PKG_description" Type="Str"></Property>
+				<Property Name="PKG_destinations.Count" Type="Int">1</Property>
+				<Property Name="PKG_destinations[0].ID" Type="Str">{C25D93CA-FD5D-4B10-AA7F-413190C8C8E4}</Property>
+				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">Volta Control Suite</Property>
+				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[0].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_displayName" Type="Str">Volta Control Suite</Property>
+				<Property Name="PKG_displayVersion" Type="Str"></Property>
+				<Property Name="PKG_feedDescription" Type="Str"></Property>
+				<Property Name="PKG_feedName" Type="Str"></Property>
+				<Property Name="PKG_homepage" Type="Str">https://github.com/ni/volta-control-suite</Property>
+				<Property Name="PKG_hostname" Type="Str"></Property>
+				<Property Name="PKG_maintainer" Type="Str">Brandon Jones &lt;bjones@emerson.com&gt;</Property>
+				<Property Name="PKG_output" Type="Path">../builds/NI_AB_PROJECTNAME/Volta Control Suite Package/Package</Property>
+				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="PKG_packageName" Type="Str">volta-control-suite</Property>
+				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
+				<Property Name="PKG_section" Type="Str">Application Software</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">0</Property>
+				<Property Name="PKG_sources.Count" Type="Int">1</Property>
+				<Property Name="PKG_sources[0].Destination" Type="Str">{C25D93CA-FD5D-4B10-AA7F-413190C8C8E4}</Property>
+				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/Volta Control Suite</Property>
+				<Property Name="PKG_sources[0].Type" Type="Str">EXE Build</Property>
+				<Property Name="PKG_synopsis" Type="Str">Modular application for controlling NI power electronics</Property>
+				<Property Name="PKG_version" Type="Str">1.0.0</Property>
 			</Item>
 		</Item>
 	</Item>

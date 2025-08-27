@@ -1,0 +1,41 @@
+[9:31:41.13 PM] Solution log file opened: C:\Repo\volta-control-suite\src\log-Volta Control Suite.txt
+[9:31:41.14 PM] System summary
+   Date               08/26/2025 21:31:41
+   NIPB version       23.8.0.2508
+   NIPB bitness       64-bit
+   NIPM version       25.5.0.49260
+   Operating System   Windows 11 64-bit
+[9:32:16.45 PM] ======= Discover: Started =======
+[9:32:16.80 PM] Discovery found 22 new dependencies.
+   Parent: C:\Repo\volta-control-suite\src                                               New dependency: C:\Repo\volta-control-suite\src\Builder.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\DCIR_HPPC_class\private               New dependency: C:\Repo\volta-control-suite\src\Classes\DCIR_HPPC_class\private\Generate HPPC Plots.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private               New dependency: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private\Cache SSH Fingerprint.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private               New dependency: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private\Send Acknowledge Event.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private               New dependency: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private\Send Connect Event.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private               New dependency: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private\Send Disconnect Event.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private               New dependency: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private\Send Reserve Event.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private               New dependency: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private\Send Unreserve Event.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private               New dependency: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private\Set MB Registers.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private               New dependency: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private\TCP Read.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private               New dependency: C:\Repo\volta-control-suite\src\Classes\HPS-17000_class\private\UDP Read.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\Logger_class                          New dependency: C:\Repo\volta-control-suite\src\Classes\Logger_class\Get Decimation Factor.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\Logger_class                          New dependency: C:\Repo\volta-control-suite\src\Classes\Logger_class\Set Decimation Factor.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\Simulated-PowerModule_class           New dependency: C:\Repo\volta-control-suite\src\Classes\Simulated-PowerModule_class\Register Events.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\Simulated-PowerModule_class\private   New dependency: C:\Repo\volta-control-suite\src\Classes\Simulated-PowerModule_class\private\Send Acknowledge Event.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\Simulated-PowerModule_class\private   New dependency: C:\Repo\volta-control-suite\src\Classes\Simulated-PowerModule_class\private\Send Connect Event.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\Simulated-PowerModule_class\private   New dependency: C:\Repo\volta-control-suite\src\Classes\Simulated-PowerModule_class\private\Send Disconnect Event.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\Simulated-PowerModule_class\private   New dependency: C:\Repo\volta-control-suite\src\Classes\Simulated-PowerModule_class\private\Send Reserve Event.vi
+   Parent: C:\Repo\volta-control-suite\src\Classes\Simulated-PowerModule_class\private   New dependency: C:\Repo\volta-control-suite\src\Classes\Simulated-PowerModule_class\private\Send Unreserve Event.vi
+   Parent: C:\Repo\volta-control-suite\src\Python                                        New dependency: C:\Repo\volta-control-suite\src\Python\test.py
+   Parent: C:\Repo\volta-control-suite\src\SubVIs                                        New dependency: C:\Repo\volta-control-suite\src\SubVIs\Get System Events.vi
+   Parent: C:\Repo\volta-control-suite\src\Types                                         New dependency: C:\Repo\volta-control-suite\src\Types\Tabs.ctl
+[9:32:16.81 PM] ======= Discover: Summary =======
+[9:32:16.81 PM] NI applications state:
+   TestStand version:   2024 Q4 (24.0.0.49152) 64-bit
+[9:32:16.81 PM] ======= Discover: Complete (elapsed time 00:00.36) =======
+[9:33:49.14 PM] Added input file: C:\Repo\volta-control-suite\src\Volta Control Suite (Windows).lvproj
+[9:33:49.15 PM] ======= Discover: Started =======
+[9:33:49.15 PM] ======= Discover: Summary =======
+[9:33:49.15 PM] NI applications state:
+   TestStand version:   2024 Q4 (24.0.0.49152) 64-bit
+[9:33:49.15 PM] ======= Discover: Complete (elapsed time 00:00.00) =======
