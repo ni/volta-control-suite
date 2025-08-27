@@ -20,6 +20,7 @@
 		<Item Name="Support Files" Type="Folder" URL="../Support Files">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Cache SSH Fingerprint.vi" Type="VI" URL="../Classes/HPS-17000_class/private/Cache SSH Fingerprint.vi"/>
 		<Item Name="HPS-17000-PowerModule.lvlib" Type="Library" URL="../HPS-17000-PowerModule.lvlib"/>
 		<Item Name="NHR-9300-PowerModule.lvlib" Type="Library" URL="../NHR-9300-PowerModule.lvlib"/>
 		<Item Name="PowerModuleInterface.lvlibp" Type="LVLibp" URL="../../builds/PowerModuleInterface/PowerModuleInterface.lvlibp">
@@ -228,7 +229,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/SubVIs/PPL Version Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{31A75332-2DEA-4579-8F68-D18A26C55B8E}</Property>
-				<Property Name="Bld_version.build" Type="Int">83</Property>
+				<Property Name="Bld_version.build" Type="Int">85</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">HPS-17000-PowerModule.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Power Modules/HPS-17000-PowerModule.lvlibp</Property>
@@ -340,7 +341,7 @@
 				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
 				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/Power Modules Package/Feed</Property>
 				<Property Name="NIPKG_feedLocation.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_installerArtifacts" Type="Str">Install.exe|InstallCHS.dll|InstallDEU.dll|InstallFRA.dll|InstallJPN.dll|InstallKOR.dll|bin|feeds|pool|system-packages
+				<Property Name="NIPKG_installerArtifacts" Type="Str">Install.exe|InstallCHS.dll|InstallDEU.dll|InstallFRA.dll|InstallJPN.dll|InstallKOR.dll|bin|feeds|pool|system-packages
 </Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">true</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/Power Modules Package/Package Installer</Property>
