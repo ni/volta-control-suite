@@ -20,11 +20,9 @@
 		<Item Name="Support Files" Type="Folder" URL="../Support Files">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Cache SSH Fingerprint.vi" Type="VI" URL="../Classes/HPS-17000_class/private/Cache SSH Fingerprint.vi"/>
 		<Item Name="HPS-17000-PowerModule.lvlib" Type="Library" URL="../HPS-17000-PowerModule.lvlib"/>
 		<Item Name="NHR-9300-PowerModule.lvlib" Type="Library" URL="../NHR-9300-PowerModule.lvlib"/>
 		<Item Name="PowerModuleInterface.lvlibp" Type="LVLibp" URL="../../builds/PowerModuleInterface/PowerModuleInterface.lvlibp">
-			<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="../../builds/PowerModuleInterface/PowerModuleInterface.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 			<Item Name="PowerModuleInterface.lvclass" Type="LVClass" URL="../../builds/PowerModuleInterface/PowerModuleInterface.lvlibp/Classes/PowerModule_interface/PowerModuleInterface.lvclass"/>
 		</Item>
 		<Item Name="Simulated-PowerModule.lvlib" Type="Library" URL="../Simulated-PowerModule.lvlib"/>
@@ -75,6 +73,8 @@
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Conditional State String__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Conditional State String__jki_lib_state_machine.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
+				<Item Name="Create File and Containing Folders.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create File and Containing Folders.vi"/>
 				<Item Name="Cycler Diagnostics Reader.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Cycler Diagnostics Reader.lvclass"/>
 				<Item Name="Cycler.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Cycler.lvclass"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
@@ -100,6 +100,7 @@
 				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value.vi"/>
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="Get VI Library File Info.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get VI Library File Info.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
@@ -177,6 +178,7 @@
 				<Item Name="Stream.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Stream.lvclass"/>
 				<Item Name="sub_Random U32.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/sub_Random U32.vi"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
+				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
@@ -229,7 +231,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/SubVIs/PPL Version Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{31A75332-2DEA-4579-8F68-D18A26C55B8E}</Property>
-				<Property Name="Bld_version.build" Type="Int">85</Property>
+				<Property Name="Bld_version.build" Type="Int">97</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">HPS-17000-PowerModule.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Power Modules/HPS-17000-PowerModule.lvlibp</Property>
@@ -242,7 +244,7 @@
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B83BFDF3-39C7-4BDE-A298-E6E2C399EC17}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{13D9F822-B766-4ABF-BDCB-0A2CF8564724}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/HPS-17000-PowerModule.lvlib</Property>
@@ -269,70 +271,6 @@
 				<Property Name="TgtF_targetfileName" Type="Str">HPS-17000-PowerModule.lvlibp</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Power Modules Installer" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">Volta Control Suite</Property>
-				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
-				<Property Name="Destination[0].tag" Type="Str">{840BBC23-7EB5-4F10-AA23-C79622A884B2}</Property>
-				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
-				<Property Name="Destination[1].name" Type="Str">Power Modules</Property>
-				<Property Name="Destination[1].parent" Type="Str">{840BBC23-7EB5-4F10-AA23-C79622A884B2}</Property>
-				<Property Name="Destination[1].tag" Type="Str">{96187023-1E3C-492D-B29A-89460F8799FC}</Property>
-				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{0F699366-49A0-4658-9C1E-31123774B9A9}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI System Configuration Runtime 25.0.0</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{0E192465-CC28-4C84-BE81-710B71C595A3}</Property>
-				<Property Name="DistPart[1].flavorID" Type="Str">_runtime_</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{6DC07E4F-70A9-4A21-97E7-13D9A15986FC}</Property>
-				<Property Name="DistPart[1].productName" Type="Str">NI-Sync API Support 24.8</Property>
-				<Property Name="DistPart[1].upgradeCode" Type="Str">{10A7C798-6D55-4C56-A50F-F6A18528DA8E}</Property>
-				<Property Name="DistPart[2].flavorID" Type="Str">_runtime_</Property>
-				<Property Name="DistPart[2].productID" Type="Str">{4EEF9A91-48C1-475A-9198-B475D1B08174}</Property>
-				<Property Name="DistPart[2].productName" Type="Str">NI-Sync Runtime 24.8</Property>
-				<Property Name="DistPart[2].upgradeCode" Type="Str">{EEAE34A1-2A74-4CBC-B624-8F5AF7714987}</Property>
-				<Property Name="DistPartCount" Type="Int">3</Property>
-				<Property Name="INST_author" Type="Str">NI</Property>
-				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../builds/Power Modules/Power Modules Installer</Property>
-				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">Power Modules Installer</Property>
-				<Property Name="INST_defaultDir" Type="Str">{96187023-1E3C-492D-B29A-89460F8799FC}</Property>
-				<Property Name="INST_installerName" Type="Str">vcs-pmod-installer.exe</Property>
-				<Property Name="INST_productName" Type="Str">Volta Control Suite - Power Modules</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.2</Property>
-				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">23368006</Property>
-				<Property Name="MSI_arpCompany" Type="Str">NI</Property>
-				<Property Name="MSI_arpURL" Type="Str">http://www.ni.com/</Property>
-				<Property Name="MSI_distID" Type="Str">{24C5DC19-342F-49C9-9E10-B8DA1E3BBBF8}</Property>
-				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
-				<Property Name="MSI_osCheck" Type="Int">0</Property>
-				<Property Name="MSI_upgradeCode" Type="Str">{D6EBBE3A-441B-4700-9F52-305C13A45140}</Property>
-				<Property Name="MSI_windowMessage" Type="Str">This tool will install the default power modules for Volta Control Suite</Property>
-				<Property Name="MSI_windowTitle" Type="Str">Volta Control Suite - Power Modules Installer</Property>
-				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
-				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
-				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
-				<Property Name="RegDestCount" Type="Int">1</Property>
-				<Property Name="Source[0].dest" Type="Str">{96187023-1E3C-492D-B29A-89460F8799FC}</Property>
-				<Property Name="Source[0].File[0].dest" Type="Str">{96187023-1E3C-492D-B29A-89460F8799FC}</Property>
-				<Property Name="Source[0].File[0].name" Type="Str">HPS-17000-PowerModule.lvlibp</Property>
-				<Property Name="Source[0].File[0].tag" Type="Str">{3AF154DD-8033-4A0C-B0F6-63930CE4F434}</Property>
-				<Property Name="Source[0].FileCount" Type="Int">1</Property>
-				<Property Name="Source[0].name" Type="Str">HPS-17000-PowerModule</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/HPS-17000-PowerModule</Property>
-				<Property Name="Source[0].type" Type="Str">PackedLib</Property>
-				<Property Name="Source[1].dest" Type="Str">{96187023-1E3C-492D-B29A-89460F8799FC}</Property>
-				<Property Name="Source[1].File[0].dest" Type="Str">{96187023-1E3C-492D-B29A-89460F8799FC}</Property>
-				<Property Name="Source[1].File[0].name" Type="Str">Simulated-PowerModule.lvlibp</Property>
-				<Property Name="Source[1].File[0].tag" Type="Str">{F32337E8-0066-4C49-8DA1-E12A3190A08E}</Property>
-				<Property Name="Source[1].FileCount" Type="Int">1</Property>
-				<Property Name="Source[1].name" Type="Str">Simulated-PowerModule</Property>
-				<Property Name="Source[1].tag" Type="Ref">/My Computer/Build Specifications/Simulated-PowerModule</Property>
-				<Property Name="Source[1].type" Type="Str">PackedLib</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-			</Item>
 			<Item Name="Power Modules Package" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
 				<Property Name="NIPKG_allDependenciesToFeed" Type="Bool">false</Property>
@@ -344,9 +282,9 @@
 				<Property Name="NIPKG_installerArtifacts" Type="Str">Install.exe|InstallCHS.dll|InstallDEU.dll|InstallFRA.dll|InstallJPN.dll|InstallKOR.dll|bin|feeds|pool|system-packages
 </Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">true</Property>
-				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/Power Modules Package/Package Installer</Property>
+				<Property Name="NIPKG_installerDestination" Type="Path">../builds/Package Installers</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">volta-control-suite-power-modules_1.0.0-0_windows_x64.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">volta-control-suite-power-modules_1.0.0-17_windows_x64.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
@@ -359,29 +297,40 @@
 				<Property Name="PKG_actions[0].NIPKG.Schedule" Type="Str">post</Property>
 				<Property Name="PKG_actions[0].NIPKG.Step" Type="Str">install</Property>
 				<Property Name="PKG_actions[0].NIPKG.Target.Child" Type="Str"></Property>
-				<Property Name="PKG_actions[0].NIPKG.Target.Destination" Type="Str">{2D8E7533-5787-42AE-99EB-9E22B267B972}</Property>
+				<Property Name="PKG_actions[0].NIPKG.Target.Destination" Type="Str">root_7</Property>
 				<Property Name="PKG_actions[0].NIPKG.Target.Source" Type="Ref">/My Computer/Support Files/Install-PuTTY.bat</Property>
 				<Property Name="PKG_actions[0].NIPKG.Wait" Type="Bool">true</Property>
 				<Property Name="PKG_actions[0].Type" Type="Str">NIPKG.Batch</Property>
+				<Property Name="PKG_actions[1].Arguments" Type="Str"></Property>
+				<Property Name="PKG_actions[1].NIPKG.HideConsole" Type="Bool">false</Property>
+				<Property Name="PKG_actions[1].NIPKG.IgnoreErrors" Type="Bool">false</Property>
+				<Property Name="PKG_actions[1].NIPKG.Schedule" Type="Str">post</Property>
+				<Property Name="PKG_actions[1].NIPKG.Step" Type="Str">install</Property>
+				<Property Name="PKG_actions[1].NIPKG.Target.Child" Type="Str"></Property>
+				<Property Name="PKG_actions[1].NIPKG.Target.Destination" Type="Str">{8E3B8B59-93E7-4247-980E-E88A57FB3E94}</Property>
+				<Property Name="PKG_actions[1].NIPKG.Target.Source" Type="Ref">/My Computer/Support Files/Config-ProgramData.bat</Property>
+				<Property Name="PKG_actions[1].NIPKG.Wait" Type="Bool">true</Property>
+				<Property Name="PKG_actions[1].Type" Type="Str">NIPKG.Batch</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
-				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">1</Property>
+				<Property Name="PKG_autoSelectDeps" Type="Bool">false</Property>
+				<Property Name="PKG_buildNumber" Type="Int">18</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Power Modules Package</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">5</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[0].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].MinVersion" Type="Str">23.3.7.49156-0+f4</Property>
 				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">volta-control-suite</Property>
-				<Property Name="PKG_dependencies[0].Package.Section" Type="Str"></Property>
-				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (64-bit)</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2023-runtime-engine</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[0].Type" Type="Str">Package</Property>
+				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_dependencies[1].Enhanced" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[1].MaxVersion" Type="Str"></Property>
-				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[1].MinVersion" Type="Str">24.8.0.49262-0+f110</Property>
+				<Property Name="PKG_dependencies[1].MaxVersion" Type="Str">24.8.0.49262-0+f110</Property>
+				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">true</Property>
+				<Property Name="PKG_dependencies[1].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">NI-Sync Runtime Support for Embedded Controllers</Property>
 				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-sync-api-support</Property>
@@ -390,9 +339,9 @@
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_dependencies[2].Enhanced" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[2].MaxVersion" Type="Str"></Property>
-				<Property Name="PKG_dependencies[2].MaxVersionInclusive" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[2].MinVersion" Type="Str">24.8.0.49261-0+f109</Property>
+				<Property Name="PKG_dependencies[2].MaxVersion" Type="Str">24.8.0.49261-0+f109</Property>
+				<Property Name="PKG_dependencies[2].MaxVersionInclusive" Type="Bool">true</Property>
+				<Property Name="PKG_dependencies[2].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[2].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[2].NIPKG.DisplayName" Type="Str">NI-Sync Runtime Support for PXI Synchronization Modules</Property>
 				<Property Name="PKG_dependencies[2].Package.Name" Type="Str">ni-sync-runtime</Property>
@@ -414,12 +363,12 @@
 				<Property Name="PKG_dependencies[4].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[4].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[4].MaxVersionInclusive" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[4].MinVersion" Type="Str">23.3.7.49156-0+f4</Property>
+				<Property Name="PKG_dependencies[4].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[4].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[4].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (64-bit)</Property>
-				<Property Name="PKG_dependencies[4].Package.Name" Type="Str">ni-labview-2023-runtime-engine</Property>
-				<Property Name="PKG_dependencies[4].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[4].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[4].NIPKG.DisplayName" Type="Str">Volta Control Suite</Property>
+				<Property Name="PKG_dependencies[4].Package.Name" Type="Str">volta-control-suite</Property>
+				<Property Name="PKG_dependencies[4].Package.Section" Type="Str">Application Software</Property>
+				<Property Name="PKG_dependencies[4].Package.Synopsis" Type="Str">Modular application for controlling NI power electronics</Property>
 				<Property Name="PKG_dependencies[4].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[4].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">Requires Volta Control Suite to work.  Installs the default power modules for control in VCS.</Property>
@@ -432,6 +381,10 @@
 				<Property Name="PKG_destinations[1].Subdir.Directory" Type="Str">Volta Control Suite</Property>
 				<Property Name="PKG_destinations[1].Subdir.Parent" Type="Str">root_5</Property>
 				<Property Name="PKG_destinations[1].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[2].ID" Type="Str">{8ECD7847-A529-4539-A3A6-3F4D71DD9281}</Property>
+				<Property Name="PKG_destinations[2].Subdir.Directory" Type="Str">Volta Control Suite</Property>
+				<Property Name="PKG_destinations[2].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[2].Type" Type="Str">Subdir</Property>
 				<Property Name="PKG_displayName" Type="Str">Volta Control Suite - Power Modules</Property>
 				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_feedDescription" Type="Str"></Property>
@@ -439,7 +392,7 @@
 				<Property Name="PKG_homepage" Type="Str">https://github.com/ni/volta-control-suite</Property>
 				<Property Name="PKG_hostname" Type="Str"></Property>
 				<Property Name="PKG_maintainer" Type="Str">Brandon Jones &lt;bjones@emerson.com&gt;</Property>
-				<Property Name="PKG_output" Type="Path">../builds/NI_AB_PROJECTNAME/Power Modules Package/Package</Property>
+				<Property Name="PKG_output" Type="Path">../builds/Packages</Property>
 				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
 				<Property Name="PKG_packageName" Type="Str">volta-control-suite-power-modules</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
@@ -452,9 +405,12 @@
 				<Property Name="PKG_sources[1].Destination" Type="Str">{2D8E7533-5787-42AE-99EB-9E22B267B972}</Property>
 				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/Simulated-PowerModule</Property>
 				<Property Name="PKG_sources[1].Type" Type="Str">Build</Property>
-				<Property Name="PKG_sources[2].Destination" Type="Str">{2D8E7533-5787-42AE-99EB-9E22B267B972}</Property>
+				<Property Name="PKG_sources[2].Destination" Type="Str">root_7</Property>
 				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Support Files/Install-PuTTY.bat</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">File</Property>
+				<Property Name="PKG_sources[3].Destination" Type="Str">{8E3B8B59-93E7-4247-980E-E88A57FB3E94}</Property>
+				<Property Name="PKG_sources[3].ID" Type="Ref">/My Computer/Support Files/Config-ProgramData.bat</Property>
+				<Property Name="PKG_sources[3].Type" Type="Str">File</Property>
 				<Property Name="PKG_synopsis" Type="Str">Power Module plugins for Volta Control Suite application</Property>
 				<Property Name="PKG_version" Type="Str">1.0.0</Property>
 			</Item>
@@ -470,7 +426,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/SubVIs/PPL Version Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{3D7B62BB-DE2B-44B1-8337-1EBAD43E5DDA}</Property>
-				<Property Name="Bld_version.build" Type="Int">22</Property>
+				<Property Name="Bld_version.build" Type="Int">30</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Simulated-PowerModule.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Power Modules/Simulated-PowerModule.lvlibp</Property>
@@ -480,7 +436,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/Power Modules</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7E5EE163-8851-408E-9BF5-605792AE6D12}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D001330E-B1DC-4319-A6ED-EB53E29302A0}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Simulated-PowerModule.lvlib</Property>

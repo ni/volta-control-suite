@@ -101,7 +101,6 @@
 		</Item>
 		<Item Name="Main HMI.vi" Type="VI" URL="../Main HMI.vi"/>
 		<Item Name="PowerModuleInterface.lvlibp" Type="LVLibp" URL="../../builds/PowerModuleInterface/PowerModuleInterface.lvlibp">
-			<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="../../builds/PowerModuleInterface/PowerModuleInterface.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 			<Item Name="PowerModuleInterface.lvclass" Type="LVClass" URL="../../builds/PowerModuleInterface/PowerModuleInterface.lvlibp/Classes/PowerModule_interface/PowerModuleInterface.lvclass"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -283,7 +282,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="LV Config Write Boolean.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Write Boolean.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -294,9 +292,9 @@
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{0B2BA97A-A8D9-4E40-8FAA-EAA503DE18C5}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{166AC028-78DB-47FC-957A-A2EB1FEBD346}</Property>
+				<Property Name="App_INI_itemID" Type="Ref">/My Computer/Support Files/volta-control-suite.ini</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="App_serverType" Type="Int">0</Property>
-				<Property Name="App_winsec.description" Type="Str">http://www.NI.com</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{0AD7BCB2-6C26-47DF-BA25-78F64DE26EC9}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Volta Control Suite</Property>
@@ -307,7 +305,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D2F2B6F4-ED90-4C02-9D23-44DF9B8F1CA2}</Property>
-				<Property Name="Bld_version.build" Type="Int">58</Property>
+				<Property Name="Bld_version.build" Type="Int">68</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">volta-control-suite.exe</Property>
@@ -318,7 +316,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/Volta Control Suite/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Support Files/volta-icon.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0B1D412C-CF1E-4B5A-9A70-3C5514526852}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{8A82522C-ED1F-4FA3-A516-AEFD196DDC49}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main HMI.vi</Property>
@@ -327,7 +325,6 @@
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/PowerModuleInterface.lvlibp</Property>
 				<Property Name="Source[2].preventRename" Type="Bool">true</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_companyName" Type="Str">NI</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Volta Control Suite</Property>
@@ -338,84 +335,11 @@
 				<Property Name="TgtF_targetfileName" Type="Str">volta-control-suite.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Volta Control Suite Installer" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">Volta Control Suite</Property>
-				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
-				<Property Name="Destination[0].tag" Type="Str">{BA7B2E03-80AB-4144-A53B-6144FCEE0F82}</Property>
-				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
-				<Property Name="DestinationCount" Type="Int">1</Property>
-				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{FF28A05C-8E8D-4F37-AECC-6EDE83CF840E}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2023 Q3 Patch 7 (64-bit)</Property>
-				<Property Name="DistPart[0].SoftDep[0].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[0].productName" Type="Str">NI ActiveX Container (64-bit)</Property>
-				<Property Name="DistPart[0].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
-				<Property Name="DistPart[0].SoftDep[1].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[1].productName" Type="Str">NI Deployment Framework 2023 (64-bit)</Property>
-				<Property Name="DistPart[0].SoftDep[1].upgradeCode" Type="Str">{E0D3C7F9-4512-438F-8123-E2050457972B}</Property>
-				<Property Name="DistPart[0].SoftDep[10].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[10].productName" Type="Str">NI TDM Streaming 23.3</Property>
-				<Property Name="DistPart[0].SoftDep[10].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
-				<Property Name="DistPart[0].SoftDep[2].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[2].productName" Type="Str">NI Error Reporting 2020 (64-bit)</Property>
-				<Property Name="DistPart[0].SoftDep[2].upgradeCode" Type="Str">{785BE224-E5B2-46A5-ADCB-55C949B5C9C7}</Property>
-				<Property Name="DistPart[0].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2023</Property>
-				<Property Name="DistPart[0].SoftDep[3].upgradeCode" Type="Str">{0270E5BD-6304-3B50-B4C4-A575BC480F4F}</Property>
-				<Property Name="DistPart[0].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[4].productName" Type="Str">NI Logos 23.3</Property>
-				<Property Name="DistPart[0].SoftDep[4].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
-				<Property Name="DistPart[0].SoftDep[5].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[5].productName" Type="Str">NI LabVIEW Web Server 2023 (64-bit)</Property>
-				<Property Name="DistPart[0].SoftDep[5].upgradeCode" Type="Str">{5F449D4C-83B9-492E-986B-6B85A29C431D}</Property>
-				<Property Name="DistPart[0].SoftDep[6].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[6].productName" Type="Str">NI mDNS Responder 23.5</Property>
-				<Property Name="DistPart[0].SoftDep[6].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
-				<Property Name="DistPart[0].SoftDep[7].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[7].productName" Type="Str">Math Kernel Libraries 2017</Property>
-				<Property Name="DistPart[0].SoftDep[7].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
-				<Property Name="DistPart[0].SoftDep[8].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[8].productName" Type="Str">Math Kernel Libraries 2020</Property>
-				<Property Name="DistPart[0].SoftDep[8].upgradeCode" Type="Str">{9872BBBA-FB96-42A4-80A2-9605AC5CBCF1}</Property>
-				<Property Name="DistPart[0].SoftDep[9].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[9].productName" Type="Str">NI VC2015 Runtime</Property>
-				<Property Name="DistPart[0].SoftDep[9].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
-				<Property Name="DistPart[0].SoftDepCount" Type="Int">11</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{B5F88810-5FC9-3E79-B786-404C9235ADC9}</Property>
-				<Property Name="DistPartCount" Type="Int">1</Property>
-				<Property Name="INST_author" Type="Str">NI</Property>
-				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../builds/Volta Control Suite/Volta Control Suite Installer</Property>
-				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">Volta Control Suite Installer</Property>
-				<Property Name="INST_defaultDir" Type="Str">{BA7B2E03-80AB-4144-A53B-6144FCEE0F82}</Property>
-				<Property Name="INST_installerName" Type="Str">vcs-install.exe</Property>
-				<Property Name="INST_productName" Type="Str">Volta Control Suite</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.2</Property>
-				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">23368006</Property>
-				<Property Name="MSI_arpCompany" Type="Str">NI</Property>
-				<Property Name="MSI_arpURL" Type="Str">http://www.ni.com/</Property>
-				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
-				<Property Name="MSI_distID" Type="Str">{9519FD12-5B53-4167-9999-2FA56E128A86}</Property>
-				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
-				<Property Name="MSI_osCheck" Type="Int">0</Property>
-				<Property Name="MSI_upgradeCode" Type="Str">{D7801815-0E85-426D-B229-597B02927430}</Property>
-				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
-				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
-				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
-				<Property Name="RegDestCount" Type="Int">1</Property>
-				<Property Name="Source[0].dest" Type="Str">{BA7B2E03-80AB-4144-A53B-6144FCEE0F82}</Property>
-				<Property Name="Source[0].name" Type="Str">Volta Control Suite</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Volta Control Suite</Property>
-				<Property Name="Source[0].type" Type="Str">EXE</Property>
-				<Property Name="SourceCount" Type="Int">1</Property>
-			</Item>
 			<Item Name="Volta Control Suite Package" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
 				<Property Name="NIPKG_allDependenciesToFeed" Type="Bool">false</Property>
 				<Property Name="NIPKG_allDependenciesToSystemLink" Type="Bool">false</Property>
-				<Property Name="NIPKG_certificates" Type="Bool">true</Property>
+				<Property Name="NIPKG_certificates" Type="Bool">false</Property>
 				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
 				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/Volta Control Suite Package/Feed</Property>
 				<Property Name="NIPKG_feedLocation.Type" Type="Str">relativeToCommon</Property>
@@ -423,18 +347,29 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/Volta Control Suite Package/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str"></Property>
-				<Property Name="NIPKG_license" Type="Ref">/My Computer/Support Files/LICENSE.rtf</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">volta-control-suite_1.0.0-8_windows_x64.nipkg</Property>
+				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
-				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
+				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
 				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">0</Property>
+				<Property Name="PKG_buildNumber" Type="Int">9</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Volta Control Suite Package</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
+				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[0].MinVersion" Type="Str">23.3.7.49156-0+f4</Property>
+				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (64-bit)</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2023-runtime-engine</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
 				<Property Name="PKG_destinations.Count" Type="Int">1</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{C25D93CA-FD5D-4B10-AA7F-413190C8C8E4}</Property>
@@ -448,12 +383,19 @@
 				<Property Name="PKG_homepage" Type="Str">https://github.com/ni/volta-control-suite</Property>
 				<Property Name="PKG_hostname" Type="Str"></Property>
 				<Property Name="PKG_maintainer" Type="Str">Brandon Jones &lt;bjones@emerson.com&gt;</Property>
-				<Property Name="PKG_output" Type="Path">../builds/NI_AB_PROJECTNAME/Volta Control Suite Package/Package</Property>
+				<Property Name="PKG_output" Type="Path">../builds/Packages</Property>
 				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
 				<Property Name="PKG_packageName" Type="Str">volta-control-suite</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Application Software</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">0</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">1</Property>
+				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_1</Property>
+				<Property Name="PKG_shortcuts[0].Name" Type="Str">Volta Control Suite</Property>
+				<Property Name="PKG_shortcuts[0].Path" Type="Path"></Property>
+				<Property Name="PKG_shortcuts[0].Target.Child" Type="Str">{DECC64CA-8360-4DC9-A758-6D7CCFA99A64}</Property>
+				<Property Name="PKG_shortcuts[0].Target.Destination" Type="Str">{C25D93CA-FD5D-4B10-AA7F-413190C8C8E4}</Property>
+				<Property Name="PKG_shortcuts[0].Target.Source" Type="Ref">/My Computer/Build Specifications/Volta Control Suite</Property>
+				<Property Name="PKG_shortcuts[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">1</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{C25D93CA-FD5D-4B10-AA7F-413190C8C8E4}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/Volta Control Suite</Property>
