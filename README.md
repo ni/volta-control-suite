@@ -16,6 +16,8 @@ The code was developed in LabVIEW 2023 (64-bit) and has the following dependenci
 - TDMS Logging + File Viewer
 - ACIR/EIS + DCIR/HPPC Testing and Report Generation
 
+<img width="1034" height="809" alt="image" src="https://github.com/user-attachments/assets/ccd56967-4ee1-4b89-bf61-1933973af08c" />
+
 ## Module
 
 TODO
