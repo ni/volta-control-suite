@@ -307,7 +307,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D2F2B6F4-ED90-4C02-9D23-44DF9B8F1CA2}</Property>
-				<Property Name="Bld_version.build" Type="Int">72</Property>
+				<Property Name="Bld_version.build" Type="Int">74</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">volta-control-suite.exe</Property>
@@ -354,7 +354,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/Volta Control Suite Package/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">volta-control-suite_1.0.0-16_windows_x64.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">volta-control-suite_1.0.0-18_windows_x64.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
@@ -383,7 +383,7 @@
 				<Property Name="PKG_actions[1].Type" Type="Str">NIPKG.Batch</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">17</Property>
+				<Property Name="PKG_buildNumber" Type="Int">19</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Volta Control Suite Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
